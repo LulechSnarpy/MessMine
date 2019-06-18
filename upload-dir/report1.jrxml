@@ -22,7 +22,10 @@
 	<pageHeader>
 		<band height="35" splitType="Stretch">
 			<textField>
-				<reportElement x="226" y="15" width="100" height="20" uuid="4c4d161b-98e5-45d8-a329-d37912df5ac4"/>
+				<reportElement x="176" y="0" width="199" height="20" uuid="4c4d161b-98e5-45d8-a329-d37912df5ac4"/>
+				<textElement>
+					<font fontName="黑体" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="false"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{PageHeader}]]></textFieldExpression>
 			</textField>
 		</band>
