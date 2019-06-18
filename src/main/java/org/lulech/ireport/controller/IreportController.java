@@ -31,11 +31,19 @@ public class IreportController {
     @ResponseBody
     @GetMapping("/download")
     public ResponseEntity<Resource> export() throws Exception {
-        Resource file = new UrlResource(Paths.get("upload-dir").resolve("balancesheet.jasper").toUri());
+        Resource file = new UrlResource(Paths.get("upload-dir").resolve("report1.jasper").toUri());
         Map<String, Object> params = new HashMap<>();
+        params.put("Title" , "Title1");
+        params.put("PageHeader", "PageHeader1");
+        params.put("ColumnHeader", "ColumnsHeader1");
         Collection<Map<String, Object>> data = new ArrayList<>();
         Map<String, Object> k = new HashMap<>();
-        k.put("field_last_asserts1", "123");
+        k.put("Title", "title1");
+        k.put("Value", "123");
+        data.add(k);
+        k = new HashMap<>();
+        k.put("Title", "title2");
+        k.put("Value", "456");
         data.add(k);
         JRDataSource dataSource = new JRBeanCollectionDataSource(data);
         byte[] bytes = JasperRunManager.runReportToPdf(file.getInputStream(), params, dataSource);
