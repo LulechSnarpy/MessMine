@@ -1,0 +1,12 @@
+spring:
+  aop:
+    auto: true
+    proxy-target-class: true
+  application:
+    name: org.iskyc.lulech.main.Application
+  beaninfo:
+    ignore: true
+  config:
+    name: application
+server:
+  port: 8989
