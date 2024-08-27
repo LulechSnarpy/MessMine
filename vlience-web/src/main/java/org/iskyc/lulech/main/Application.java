@@ -1,0 +1,35 @@
+package org.iskyc.lulech.main;
+
+import org.iskyc.lulech.main.service.FactoriosService;
+import org.iskyc.lulech.main.service.dao.FactorioItems;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.*;
+
+@SpringBootApplication
+@RestController
+public class Application {
+    @Autowired
+    FactoriosService factoriosService;
+
+    public static void main(String[] args) { SpringApplication.run(Application.class, args); }
+
+    @GetMapping("/hello")
+    @ResponseBody
+    public String hello(@RequestParam(value = "name", defaultValue = "World") String name) throws Exception {
+        if(!name.equals("World")) throw new Exception("error test");
+        return String.format("Hello %s!", name);
+    }
+
+    @RequestMapping("/save")
+    @ResponseBody
+    public String saveFactorio(FactorioItems items) {
+        FactorioItems saved = factoriosService.save(items);
+        if (null != saved.getId()) {
+            return "success";
+        } else {
+            return "failed";
+        }
+    }
+}

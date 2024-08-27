@@ -4,28 +4,108 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="228ea618-1e46-4d74-93d6-1c4649016fa5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/MessMine.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/painting-timer-web.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/painting-timer-web.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/painting-timer-web.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/service/ReactiveFactorioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioCostItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/service/database/ElasticsearchConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/painting-timer-web/src/main/resources/MATA-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/painting-timer-web/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/painting-timer-web/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/painting-timer-web/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/painting-timer-web/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/painting-timer-web/src/main/resources/config/application.yml" afterDir="false" />
+    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.9/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.9/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.9/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.9/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.9/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.9/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/event/error/FailHandel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/event/state/ReadinessStateExporter$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/event/state/ReadinessStateExporter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/FactoriosService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/ReactiveFactorioRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/dao/FactorioCostItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/dao/FactorioItems.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/database/ElasticsearchConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/resources/main/MATA-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/resources/main/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/resources/main/dbs/sqlite3.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/resources/main/dbs/sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/compileTransaction/stash-dir/Application.class.uniqueId1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/compileTransaction/stash-dir/FactoriosService.class.uniqueId0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/event/error/FailHandel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/event/state/ReadinessStateExporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/FactoriosService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/ReactiveFactorioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioCostItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/database/ElasticsearchConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/main/resources/MATA-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/main/resources/dbs/sqlite3.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/main/resources/dbs/sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/test/java/org/iskyc/lulech/jdbc/JDBCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/test/resources/dbs/sqlite3.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/test/resources/dbs/sqlite3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MessMine.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/painting-timer-web.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/painting-timer-web.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/painting-timer-web.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/build/resources/main/MATA-INF/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/build/resources/main/config/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/build/resources/main/dbs/sqlite3.def" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/build/resources/main/dbs/sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/event/error/FailHandel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/event/state/ReadinessStateExporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/service/FactoriosService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/service/ReactiveFactorioRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioCostItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/service/database/ElasticsearchConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/resources/MATA-INF/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/resources/config/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/resources/dbs/sqlite3.def" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/resources/dbs/sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/test/java/org/iskyc/lulech/jdbc/JDBCTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/test/resources/dbs/sqlite3.def" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/test/resources/dbs/sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-view/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-view/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,117 +113,134 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$/painting-timer-web">
+    <projectState path="$PROJECT_DIR$/vlience-web">
       <ProjectState />
     </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$/painting-timer-web">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="vlience-web" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;LulechSnarpy&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LulechSnarpy"
   }
-}</component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="1cd6c966-94e6-4373-ba9d-e3ac50da9a38" />
-  </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/LulechSnarpy/MessMine.git&quot;,
-    &quot;accountId&quot;: &quot;1cd6c966-94e6-4373-ba9d-e3ac50da9a38&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/LulechSnarpy/MessMine.git",
+    "accountId": "1cd6c966-94e6-4373-ba9d-e3ac50da9a38"
   }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="2kPHC2gwinOEaRXx7oEouNiO68f" />
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2lEcT1ZsJphqKWXnZ01NlRvzdVG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.Build painting-timer-web.executor": "Run",
-    "Gradle.E:/lulech/project/Projects/MessMine/painting-timer-web [init --type java-application --dsl groovy].executor": "Run",
-    "Gradle.E:/lulech/project/Projects/MessMine/painting-timer-web [init].executor": "Run",
-    "Gradle.E:/lulech/project/Projects/MessMine/painting-timer-web/build.gradle.executor": "Run",
-    "Gradle.painting-timer-web [dependencies].executor": "Run",
-    "JavaClassFindUsagesOptions.isImplementingClasses": "true",
-    "JavaClassFindUsagesOptions.isSearchForTextOccurrences": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
+    "Gradle.Build vlience-web.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Application.executor": "Run",
-    "Spring Boot.current.executor": "Run",
-    "git-widget-placeholder": "painting-timer-web",
-    "ignore.virus.scanning.warn.message": "true",
+    "git-widget-placeholder": "vlience",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/lulech/project/Projects/MessMine/painting-timer-web",
+    "last_opened_file_path": "E:/lulech/project/Projects/MessMine",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
+    "npm.build.executor": "Run",
+    "npm.vlience-view run.executor": "Run",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.16305222",
     "project.structure.side.proportion": "0.39195403",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "ts.external.directory.path": "E:\\lulech\\project\\Projects\\MessMine\\vlience-view\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="gradle init --type java-application --dsl groovy" />
-      <command value="gradle init" />
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\lulech\project\Projects\MessMine" />
+    </key>
   </component>
-  <component name="RunAnythingContextRecentDirectoryCache">
-    <option name="paths">
-      <recentPaths value="$PROJECT_DIR$/painting-timer-web" />
-      <recentPaths value="$PROJECT_DIR$/painting-timer-web" />
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.vlience-view run">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="MessMine" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="MessMine" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="painting-timer-web.main" />
+      <module name="vlience-web.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.iskyc.lulech.main.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="vlience-view run" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/vlience-view/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <EXTENSION ID="com.intellij.lang.javascript.buildTools.npm.rc.StartBrowserRunConfigurationExtension">
+        <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" start="true" />
+      </EXTENSION>
+      <method v="2">
+        <option name="NpmBeforeRunTask" enabled="true">
+          <package-json value="$PROJECT_DIR$/vlience-view/package.json" />
+          <command value="run" />
+          <scripts>
+            <script value="build" />
+          </scripts>
+          <node-interpreter value="project" />
+          <envs />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="npm.vlience-view run" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -156,48 +253,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="228ea618-1e46-4d74-93d6-1c4649016fa5" name="Changes" comment="" />
-      <created>1723178162494</created>
+      <changelist id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="" />
+      <created>1724748681500</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1723178162494</updated>
-      <workItem from="1723178164287" duration="942000" />
-      <workItem from="1723179127547" duration="290000" />
-      <workItem from="1723179920181" duration="250000" />
-      <workItem from="1723181394392" duration="10962000" />
-      <workItem from="1723265073198" duration="12682000" />
-      <workItem from="1724722306240" duration="3049000" />
+      <updated>1724748681500</updated>
+      <workItem from="1724748683642" duration="3481000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/painting-timer-web" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/painting_timer_web$Application.ic" NAME="Application Coverage Results" MODIFIED="1723192428010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/MessMine$E__lulech_project_Projects_MessMine_painting_timer_web_build_gradle.ic" NAME="$PROJECT_DIR$/painting-timer-web/build.gradle Coverage Results" MODIFIED="1723178704390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

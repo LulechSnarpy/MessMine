@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/painting-timer-web.iml" filepath="$PROJECT_DIR$/.idea/modules/painting-timer-web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/painting-timer-web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/painting-timer-web.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/painting-timer-web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/painting-timer-web.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vilence-view.iml" filepath="$PROJECT_DIR$/vilence-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../vlience-view.iml" filepath="$PROJECT_DIR$/../vlience-view.iml" />
     </modules>
   </component>
 </project>
