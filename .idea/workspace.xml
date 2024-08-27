@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="228ea618-1e46-4d74-93d6-1c4649016fa5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/MessMine.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/painting-timer-web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/painting-timer-web.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/painting-timer-web.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/service/ReactiveFactorioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioCostItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/main/service/database/ElasticsearchConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/painting-timer-web/src/main/resources/MATA-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/painting-timer-web/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/painting-timer-web/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/java/org/iskyc/lulech/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/painting-timer-web/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/painting-timer-web/src/main/resources/config/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/painting-timer-web">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/painting-timer-web">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LulechSnarpy&quot;
+  }
+}</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="1cd6c966-94e6-4373-ba9d-e3ac50da9a38" />
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LulechSnarpy/MessMine.git&quot;,
+    &quot;accountId&quot;: &quot;1cd6c966-94e6-4373-ba9d-e3ac50da9a38&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2kPHC2gwinOEaRXx7oEouNiO68f" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build painting-timer-web.executor": "Run",
+    "Gradle.E:/lulech/project/Projects/MessMine/painting-timer-web [init --type java-application --dsl groovy].executor": "Run",
+    "Gradle.E:/lulech/project/Projects/MessMine/painting-timer-web [init].executor": "Run",
+    "Gradle.E:/lulech/project/Projects/MessMine/painting-timer-web/build.gradle.executor": "Run",
+    "Gradle.painting-timer-web [dependencies].executor": "Run",
+    "JavaClassFindUsagesOptions.isImplementingClasses": "true",
+    "JavaClassFindUsagesOptions.isSearchForTextOccurrences": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.Application.executor": "Run",
+    "Spring Boot.current.executor": "Run",
+    "git-widget-placeholder": "painting-timer-web",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/lulech/project/Projects/MessMine/painting-timer-web",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.39195403",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle init --type java-application --dsl groovy" />
+      <command value="gradle init" />
+    </option>
+  </component>
+  <component name="RunAnythingContextRecentDirectoryCache">
+    <option name="paths">
+      <recentPaths value="$PROJECT_DIR$/painting-timer-web" />
+      <recentPaths value="$PROJECT_DIR$/painting-timer-web" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="painting-timer-web.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.iskyc.lulech.main.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.300" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.300" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="228ea618-1e46-4d74-93d6-1c4649016fa5" name="Changes" comment="" />
+      <created>1723178162494</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723178162494</updated>
+      <workItem from="1723178164287" duration="942000" />
+      <workItem from="1723179127547" duration="290000" />
+      <workItem from="1723179920181" duration="250000" />
+      <workItem from="1723181394392" duration="10962000" />
+      <workItem from="1723265073198" duration="12682000" />
+      <workItem from="1724722306240" duration="3049000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/painting-timer-web" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/painting_timer_web$Application.ic" NAME="Application Coverage Results" MODIFIED="1723192428010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/MessMine$E__lulech_project_Projects_MessMine_painting_timer_web_build_gradle.ic" NAME="$PROJECT_DIR$/painting-timer-web/build.gradle Coverage Results" MODIFIED="1723178704390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>
