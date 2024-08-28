@@ -5,10 +5,17 @@ import org.iskyc.lulech.main.service.dao.FactorioItems;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
 @RestController
+@EnableElasticsearchRepositories(basePackages
+        = "org.iskyc.lulech.main.service")
+@ComponentScan(basePackages = { "org.iskyc.lulech.main.service" })
 public class Application {
     @Autowired
     FactoriosService factoriosService;

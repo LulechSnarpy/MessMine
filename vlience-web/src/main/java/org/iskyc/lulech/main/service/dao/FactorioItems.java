@@ -27,7 +27,7 @@ public class FactorioItems {
     private List<FactorioCostItem> costs;
 
     @Field(type = FieldType.Object)
-    private List<String> usedBy;
+    private List<String> used;
 
     public String getId() {
         return id;
@@ -69,11 +69,11 @@ public class FactorioItems {
         this.costs = costs;
     }
 
-    public List<String> getUsedBy() {
-        return usedBy;
+    public List<String> getUsed() {
+        return used;
     }
 
-    public void setUsedBy(List<String> usedBy) {
-        this.usedBy = usedBy;
+    public void setUsed(List<String> used) {
+        this.used = used;
     }
 }

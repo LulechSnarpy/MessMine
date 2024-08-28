@@ -11,5 +11,7 @@ spring:
     ignore: true
   config:
     name: application
+  elasticsearch:
+    uris: http://localhost:9200
 server:
   port: 8989

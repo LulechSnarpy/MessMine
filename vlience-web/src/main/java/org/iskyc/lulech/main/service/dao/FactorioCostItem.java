@@ -12,7 +12,7 @@ public class FactorioCostItem {
     private Integer costs;
 
     @Field(type = FieldType.Object)
-    private FactorioItems costItem;
+    private String costItemId;
 
     public Integer getCosts() {
         return costs;
@@ -22,11 +22,11 @@ public class FactorioCostItem {
         this.costs = costs;
     }
 
-    public FactorioItems getCostItem() {
-        return costItem;
+    public String getCostItemId() {
+        return costItemId;
     }
 
-    public void setCostItem(FactorioItems costItem) {
-        this.costItem = costItem;
+    public void setCostItemId(String costItemId) {
+        this.costItemId = costItemId;
     }
 }

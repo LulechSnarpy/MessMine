@@ -5,8 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="A huge change">
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/FactoriosService.class" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/FactoriosService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/ReactiveFactorioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/ReactiveFactorioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/dao/FactorioCostItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/dao/FactorioCostItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/dao/FactorioItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/dao/FactorioItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/database/ElasticsearchConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/resources/main/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build/resources/main/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/compileTransaction/stash-dir/Application.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/compileTransaction/stash-dir/FactoriosService.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/compileTransaction/stash-dir/FactoriosService.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/FactoriosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/FactoriosService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/ReactiveFactorioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/ReactiveFactorioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioCostItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioCostItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/database/ElasticsearchConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/src/main/resources/config/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +65,7 @@
     <option name="NEW_BASE" value="origin/vlience" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/vlience-view" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -66,40 +92,43 @@
     <option name="showScratchesAndConsoles" value="false" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build vlience-web.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "<unknown>",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/lulech/project/Projects/MessMine",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.vlience-view run.executor": "Run",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.16305222",
-    "project.structure.side.proportion": "0.39195403",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "ts.external.directory.path": "E:\\lulech\\project\\Projects\\MessMine\\vlience-view\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build vlience-web.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;vlience&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/lulech/project/Projects/MessMine&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.vlience-view run.executor&quot;: &quot;Run&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.16305222&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.39195403&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\lulech\\project\\Projects\\MessMine\\vlience-view\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\lulech\project\Projects\MessMine" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.vlience-view run">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="MessMine" />
       <method v="2">
@@ -116,6 +145,7 @@
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="vlience-web.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.iskyc.lulech.main.Application" />
+      <option name="VM_PARAMETERS" value="-Djavax.net.ssl.trustStore" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,7 +194,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724748681500</updated>
-      <workItem from="1724748683642" duration="5345000" />
+      <workItem from="1724748683642" duration="19559000" />
     </task>
     <task id="LOCAL-00001" summary="A huge change">
       <option name="closed" value="true" />

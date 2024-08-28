@@ -11,9 +11,5 @@ public interface ReactiveFactorioRepository extends ReactiveSortingRepository<Fa
 
     List<FactorioItems> findById(String id);
 
-    List<FactorioItems> findByUsedBy(List<String> usedBy);
-
-    FactorioItems save(FactorioItems items);
-
-    FactorioItems saveAndFlush(FactorioItems items);
+    List<FactorioItems> findByUsed(List<String> used);
 }
