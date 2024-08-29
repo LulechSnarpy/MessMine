@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="Fix connection to the elasticsearch.&#10;In http mod not the https.&#10;Https mod need to be fixed.">
+    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="Refactor service name">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/FactoriosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/FactorioService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +184,7 @@
       <workItem from="1724748683642" duration="19559000" />
       <workItem from="1724829070879" duration="6555000" />
       <workItem from="1724836135842" duration="742000" />
-      <workItem from="1724902403029" duration="19362000" />
+      <workItem from="1724902403029" duration="19650000" />
     </task>
     <task id="LOCAL-00001" summary="A huge change">
       <option name="closed" value="true" />
@@ -202,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724829460845</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refactor service name">
+      <option name="closed" value="true" />
+      <created>1724926925655</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724926925655</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +243,8 @@
     <MESSAGE value="try to add elasticsearch in program&#10;Initial commit from Create Next App" />
     <MESSAGE value="A huge change" />
     <MESSAGE value="Fix connection to the elasticsearch.&#10;In http mod not the https.&#10;Https mod need to be fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix connection to the elasticsearch.&#10;In http mod not the https.&#10;Https mod need to be fixed." />
+    <MESSAGE value="Refactor service name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor service name" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

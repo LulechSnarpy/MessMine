@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/vilence-view.iml" filepath="$PROJECT_DIR$/vilence-view.iml" />
       <module fileurl="file://$PROJECT_DIR$/../vlience-view.iml" filepath="$PROJECT_DIR$/../vlience-view.iml" />
     </modules>
   </component>
