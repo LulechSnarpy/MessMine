@@ -1,12 +1,10 @@
 package org.iskyc.lulech.main;
 
-import org.iskyc.lulech.main.service.FactoriosService;
+import org.iskyc.lulech.main.service.FactorioService;
 import org.iskyc.lulech.main.service.dao.FactorioItems;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @ComponentScan(basePackages = { "org.iskyc.lulech.main.service" })
 public class Application {
     @Autowired
-    FactoriosService factoriosService;
+    FactorioService factorioService;
 
     public static void main(String[] args) { SpringApplication.run(Application.class, args); }
 
@@ -32,7 +30,7 @@ public class Application {
     @RequestMapping("/save")
     @ResponseBody
     public String saveFactorio(FactorioItems items) {
-        FactorioItems saved = factoriosService.save(items);
+        FactorioItems saved = factorioService.save(items);
         if (null != saved.getId()) {
             return "success";
         } else {

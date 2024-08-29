@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class FactoriosService {
+public class FactorioService {
 
     @Autowired
     private ReactiveFactorioRepository repository;
