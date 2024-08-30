@@ -24,37 +24,48 @@ public class FactorioController {
     private final static String baseUrl= "https://wiki.factorio.com";
     private final static String prefix = "/";
     List<FactorioItems> items;
+    Map<String, HttpClient> clients;
     Set<String> currentItems;
     @RequestMapping("/getDataFormFactorio")
     @ResponseBody
     public String getDataFormFactorio() throws IOException, InterruptedException {
-        items = new ArrayList<>();
-        currentItems = new HashSet<>();
-        getItemsByUrl("/Production_science_pack");
+        items = Collections.synchronizedList(new ArrayList<>());
+        currentItems = Collections.synchronizedSet(new HashSet<>());
+        clients = Collections.synchronizedMap(new HashMap<>());
+        sendAsyncByUrl("/Production_science_pack");
+        do {
+            Thread.sleep(3000);
+        } while (!clients.isEmpty());
         ObjectWriter ow =  new ObjectMapper().writer().withDefaultPrettyPrinter();
         return ow.writeValueAsString(items);
     }
 
-    public Document getDoucmentByUrl(String baseurl, String url) throws IOException, InterruptedException {
+    public void sendAsyncByUrl(String url) {
+        sendAsyncByUrl(baseUrl, url);
+    }
+
+    public void sendAsyncByUrl(String baseurl, String url) {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(baseUrl + url))
                 .build();
         HttpClient client = HttpClient.newBuilder()
                 .build();
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        return Jsoup.parse(response.body());
+        clients.put(url, client);
+        client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
+                .thenApply(this::applyRequest);
     }
 
-    public void getItemsByUrl(String url) throws IOException, InterruptedException {
-        Document document = getDoucmentByUrl(baseUrl, url);
+    public String applyRequest(HttpResponse<String> response) {
+        Document document = Jsoup.parse(response.body());
+        String url = response.uri().toString();
+        url = url.substring(url.lastIndexOf("/"));
         Elements elements;
         Element element;
         List<FactorioItems> preItems;
-        Set<String> nextItems;
         List<Double> costs;
         FactorioCostItem cost;
         List<FactorioCostItem> costItems;
-        nextItems = new HashSet<>();
+        Set<String> nextItems = new HashSet<>();
         FactorioItems item = new FactorioItems();
         String name;
         String description;
@@ -115,12 +126,14 @@ public class FactorioController {
         }
         // add item
         items.add(item);
-        // found next items
+        // search for next Url
         nextItems.removeAll(currentItems);
         currentItems.addAll(nextItems);
         for (String nextUrl : nextItems) {
-            getItemsByUrl(nextUrl);
+            sendAsyncByUrl(nextUrl);
         }
+        clients.remove(url);
+        return url;
     }
 
     public String urlToId (String url) {
@@ -139,10 +152,4 @@ public class FactorioController {
         item.setId(urlToId(href));
         return item;
     }
-
-     /*   public void itemsAddAll(List<FactorioItems> data) {
-            for(FactorioItems item : data) {
-                items.put(item.getId(), item);
-            }
-        }*/
 }

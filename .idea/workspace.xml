@@ -4,16 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="Add canvas konva react-konva&#10;Run a demo on it">
-      <change afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/controller/FactorioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="add function to get data from wiki.factorio.com &#10;but to slow in Synchronous mode&#10;next step try to tn Asynchronous mode">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-web/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioCostItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioCostItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/FactoriosService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/dao/FactorioCostItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build/classes/java/main/org/iskyc/lulech/main/service/dao/FactorioCostItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/compileTransaction/stash-dir/FactoriosService.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/compileTransaction/stash-dir/ReactiveFactorioRepository.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/controller/FactorioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/controller/FactorioController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +208,7 @@
       <workItem from="1724836135842" duration="742000" />
       <workItem from="1724902403029" duration="26117000" />
       <workItem from="1724936424582" duration="1950000" />
-      <workItem from="1724984281579" duration="25155000" />
+      <workItem from="1724984281579" duration="29444000" />
     </task>
     <task id="LOCAL-00001" summary="A huge change">
       <option name="closed" value="true" />
@@ -233,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724987357063</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add function to get data from wiki.factorio.com &#10;but to slow in Synchronous mode&#10;next step try to tn Asynchronous mode">
+      <option name="closed" value="true" />
+      <created>1725011050081</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725011050081</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +288,8 @@
     <MESSAGE value="Fix connection to the elasticsearch.&#10;In http mod not the https.&#10;Https mod need to be fixed." />
     <MESSAGE value="Refactor service name" />
     <MESSAGE value="Add canvas konva react-konva&#10;Run a demo on it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add canvas konva react-konva&#10;Run a demo on it" />
+    <MESSAGE value="add function to get data from wiki.factorio.com &#10;but to slow in Synchronous mode&#10;next step try to tn Asynchronous mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="add function to get data from wiki.factorio.com &#10;but to slow in Synchronous mode&#10;next step try to tn Asynchronous mode" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
