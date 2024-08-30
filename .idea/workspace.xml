@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="Refactor service name">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-view/app/components/canvas.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-view/app/factorio/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/factorio/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-view/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-view/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-view/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -68,6 +72,7 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2lEcT1ZsJphqKWXnZ01NlRvzdVG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -75,34 +80,34 @@
     <option name="showScratchesAndConsoles" value="false" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build vlience-web.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "vlience",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/lulech/project/Projects/MessMine",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.vlience-view run.executor": "Run",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.16305222",
-    "project.structure.side.proportion": "0.39195403",
-    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
-    "ts.external.directory.path": "E:\\lulech\\project\\Projects\\MessMine\\vlience-view\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build vlience-web.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;vlience&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/lulech/project/Projects/MessMine&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.vlience-view run.executor&quot;: &quot;Run&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.16305222&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.39195403&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\lulech\\project\\Projects\\MessMine\\vlience-view\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -184,7 +189,9 @@
       <workItem from="1724748683642" duration="19559000" />
       <workItem from="1724829070879" duration="6555000" />
       <workItem from="1724836135842" duration="742000" />
-      <workItem from="1724902403029" duration="19650000" />
+      <workItem from="1724902403029" duration="26117000" />
+      <workItem from="1724936424582" duration="1950000" />
+      <workItem from="1724984281579" duration="2750000" />
     </task>
     <task id="LOCAL-00001" summary="A huge change">
       <option name="closed" value="true" />
@@ -240,6 +247,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/vlience-view" />
+    </ignored-roots>
     <MESSAGE value="try to add elasticsearch in program&#10;Initial commit from Create Next App" />
     <MESSAGE value="A huge change" />
     <MESSAGE value="Fix connection to the elasticsearch.&#10;In http mod not the https.&#10;Https mod need to be fixed." />
