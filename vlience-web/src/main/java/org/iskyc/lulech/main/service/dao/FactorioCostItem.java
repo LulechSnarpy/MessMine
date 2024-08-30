@@ -8,17 +8,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class FactorioCostItem {
 
-    @Field(type = FieldType.Integer)
-    private Integer costs;
+    @Field(type = FieldType.Double)
+    private Double costs;
 
     @Field(type = FieldType.Object)
     private String costItemId;
 
-    public Integer getCosts() {
+    public Double getCosts() {
         return costs;
     }
 
-    public void setCosts(Integer costs) {
+    public void setCosts(Double costs) {
         this.costs = costs;
     }
 

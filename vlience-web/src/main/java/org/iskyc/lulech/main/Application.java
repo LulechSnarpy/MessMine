@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @EnableElasticsearchRepositories(basePackages
         = "org.iskyc.lulech.main.service")
-@ComponentScan(basePackages = { "org.iskyc.lulech.main.service" })
+@ComponentScan(basePackages = { "org.iskyc.lulech.main" })
 public class Application {
     @Autowired
     FactorioService factorioService;

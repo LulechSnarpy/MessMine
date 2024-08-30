@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="Refactor service name">
-      <change afterPath="$PROJECT_DIR$/vlience-view/app/components/canvas.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="Add canvas konva react-konva&#10;Run a demo on it">
+      <change afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/controller/FactorioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-view/app/factorio/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/factorio/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-view/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-view/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-view/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioCostItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/service/dao/FactorioCostItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +28,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/vlience-web">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -45,6 +50,7 @@
       <list>
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -80,34 +86,34 @@
     <option name="showScratchesAndConsoles" value="false" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build vlience-web.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;vlience&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/lulech/project/Projects/MessMine&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.build.executor&quot;: &quot;Run&quot;,
-    &quot;npm.vlience-view run.executor&quot;: &quot;Run&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.16305222&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.39195403&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\lulech\\project\\Projects\\MessMine\\vlience-view\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build vlience-web.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Application.executor": "Run",
+    "git-widget-placeholder": "vlience",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/lulech/project/Projects/MessMine",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.vlience-view run.executor": "Run",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.16305222",
+    "project.structure.side.proportion": "0.39195403",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "ts.external.directory.path": "E:\\lulech\\project\\Projects\\MessMine\\vlience-view\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -118,7 +124,7 @@
       <recent name="E:\lulech\project\Projects\MessMine" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.vlience-view run">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="MessMine" />
       <method v="2">
@@ -133,8 +139,10 @@
       </method>
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="vlience-web.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.iskyc.lulech.main.Application" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <option name="VM_PARAMETERS" value="-Djavax.net.ssl.trustStore" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,7 +199,7 @@
       <workItem from="1724836135842" duration="742000" />
       <workItem from="1724902403029" duration="26117000" />
       <workItem from="1724936424582" duration="1950000" />
-      <workItem from="1724984281579" duration="2750000" />
+      <workItem from="1724984281579" duration="25155000" />
     </task>
     <task id="LOCAL-00001" summary="A huge change">
       <option name="closed" value="true" />
@@ -217,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724926925655</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add canvas konva react-konva&#10;Run a demo on it">
+      <option name="closed" value="true" />
+      <created>1724987357063</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724987357063</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +270,8 @@
     <MESSAGE value="A huge change" />
     <MESSAGE value="Fix connection to the elasticsearch.&#10;In http mod not the https.&#10;Https mod need to be fixed." />
     <MESSAGE value="Refactor service name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor service name" />
+    <MESSAGE value="Add canvas konva react-konva&#10;Run a demo on it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add canvas konva react-konva&#10;Run a demo on it" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
