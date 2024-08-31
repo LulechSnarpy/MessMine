@@ -11,7 +11,7 @@ public class FactorioCostItem {
     @Field(type = FieldType.Double)
     private Double costs;
 
-    @Field(type = FieldType.Object)
+    @Field(type = FieldType.Text)
     private String costItemId;
 
     public Double getCosts() {
@@ -28,5 +28,13 @@ public class FactorioCostItem {
 
     public void setCostItemId(String costItemId) {
         this.costItemId = costItemId;
+    }
+
+    @Override
+    public String toString() {
+        return "FactorioCostItem{" +
+                "costs=" + costs +
+                ", costItemId='" + costItemId + '\'' +
+                '}';
     }
 }

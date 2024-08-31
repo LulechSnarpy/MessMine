@@ -4,9 +4,8 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
-import org.springframework.data.util.Streamable;
 
-import java.util.Iterator;
+import java.util.ArrayList;
 import java.util.List;
 
 @Document(indexName = "factorio")
@@ -23,11 +22,11 @@ public class FactorioItems {
     @Field(type = FieldType.Double)
     private Double costTimes;
 
-    @Field(type = FieldType.Object)
+    @Field(type = FieldType.Nested)
     private List<FactorioCostItem> costs;
 
-    @Field(type = FieldType.Object)
-    private List<String> used;
+    @Field(type = FieldType.Text)
+    private List<String> Consumed;
 
     public String getId() {
         return id;
@@ -69,11 +68,23 @@ public class FactorioItems {
         this.costs = costs;
     }
 
-    public List<String> getUsed() {
-        return used;
+    public List<String> getConsumed() {
+        return Consumed;
     }
 
-    public void setUsed(List<String> used) {
-        this.used = used;
+    public void setConsumed(List<String> consumed) {
+        Consumed = consumed;
+    }
+
+    @Override
+    public String toString() {
+        return "FactorioItems{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", costTimes=" + costTimes +
+                ", costs=" + costs +
+                ", Consumed=" + Consumed +
+                '}';
     }
 }

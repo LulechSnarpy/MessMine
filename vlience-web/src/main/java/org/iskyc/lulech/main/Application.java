@@ -9,11 +9,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 import org.springframework.web.bind.annotation.*;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"org.iskyc.lulech.main"})
 @RestController
 @EnableElasticsearchRepositories(basePackages
         = "org.iskyc.lulech.main.service")
-@ComponentScan(basePackages = { "org.iskyc.lulech.main" })
+//@ComponentScan(basePackages = { "org.iskyc.lulech.main" })
 public class Application {
     @Autowired
     FactorioService factorioService;
@@ -30,8 +30,7 @@ public class Application {
     @RequestMapping("/save")
     @ResponseBody
     public String saveFactorio(FactorioItems items) {
-        FactorioItems saved = factorioService.save(items);
-        if (null != saved.getId()) {
+        if (factorioService.save(items)) {
             return "success";
         } else {
             return "failed";

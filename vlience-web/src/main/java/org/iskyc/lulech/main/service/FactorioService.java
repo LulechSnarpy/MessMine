@@ -4,6 +4,8 @@ import org.iskyc.lulech.main.service.dao.FactorioItems;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ReactiveElasticsearchOperations;
 import org.springframework.stereotype.Component;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.util.List;
 
@@ -16,10 +18,17 @@ public class FactorioService {
     @Autowired
     ReactiveElasticsearchOperations operations;
 
-    public List<FactorioItems> findByName(String name) {
-        return repository.findByName(name);
+    public Flux<FactorioItems> findAll() {
+        return repository.findAll();
     }
 
-    public FactorioItems save(FactorioItems items) { operations.save(items).subscribe(); return  items;}
+    public Flux<FactorioItems> findById(String id) {
+        return repository.findById(id).flux();
+    }
 
+    public boolean save(FactorioItems items) { return operations.save(items).subscribe().isDisposed(); }
+
+    public Flux<FactorioItems> saves(List<FactorioItems> items) {
+        return operations.saveAll(Mono.just(items), FactorioItems.class);
+    }
 }

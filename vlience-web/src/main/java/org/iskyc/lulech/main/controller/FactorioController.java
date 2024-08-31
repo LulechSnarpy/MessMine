@@ -1,16 +1,22 @@
 package org.iskyc.lulech.main.controller;
 
+import co.elastic.clients.json.jackson.JacksonJsonpParser;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
+import org.iskyc.lulech.main.service.FactorioService;
 import org.iskyc.lulech.main.service.dao.FactorioCostItem;
 import org.iskyc.lulech.main.service.dao.FactorioItems;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Flux;
 
 import java.io.IOException;
 import java.net.URI;
@@ -23,9 +29,13 @@ import java.util.*;
 public class FactorioController {
     private final static String baseUrl= "https://wiki.factorio.com";
     private final static String prefix = "/";
+    private final static List<String> banList = Arrays.asList("Uranium-238,Uranium-235".split(","));
     List<FactorioItems> items;
     Map<String, HttpClient> clients;
     Set<String> currentItems;
+    @Autowired
+    private FactorioService factorioService;
+
     @RequestMapping("/getDataFormFactorio")
     @ResponseBody
     public String getDataFormFactorio() throws IOException, InterruptedException {
@@ -37,14 +47,16 @@ public class FactorioController {
             Thread.sleep(3000);
         } while (!clients.isEmpty());
         ObjectWriter ow =  new ObjectMapper().writer().withDefaultPrettyPrinter();
-        return ow.writeValueAsString(items);
+        Flux<FactorioItems> r = factorioService.saves(items);
+        return ow.writeValueAsString(r.toStream().toList());
+        //return items.toString();
     }
 
     public void sendAsyncByUrl(String url) {
         sendAsyncByUrl(baseUrl, url);
     }
 
-    public void sendAsyncByUrl(String baseurl, String url) {
+    public void sendAsyncByUrl(String baseUrl, String url) {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(baseUrl + url))
                 .build();
@@ -66,21 +78,29 @@ public class FactorioController {
         FactorioCostItem cost;
         List<FactorioCostItem> costItems;
         Set<String> nextItems = new HashSet<>();
-        FactorioItems item = new FactorioItems();
         String name;
         String description;
         // init item
+        description = document.select("tr.border-top:contains(Prototype type)").select("a").text();
+        if ("recipe".contains(description)) {
+            clients.remove(url);
+            return url;
+        }
+        FactorioItems item = new FactorioItems();
         item.setId(urlToId(url));
         name = document.select("td.infobox-header-text").select("span").text();
         item.setName(name);
         description = baseUrl + document.select("td.infobox-header-text")
                 .prev().select("img").attr("src");
         item.setDescription(description);
+        costItems = new ArrayList<>();
+        item.setCosts(costItems);
+        item.setConsumed(new ArrayList<>());
         // Found Founder
         elements = document.select("tr.border-top:contains(Recipe)");
         if (!elements.isEmpty()) {
             element = elements.getFirst().nextElementSibling();
-            if (null != element) {
+            if (!banList.contains(item.getId()) && null != element) {
                 preItems = element.select("a")
                         .stream().map(this::getItemByElement).toList();
                 if (!preItems.isEmpty()) {
@@ -99,7 +119,6 @@ public class FactorioController {
                             }).map(Double::parseDouble).toList();
                     Double baseCost = costs.getLast();
                     item.setCostTimes(costs.getFirst() / baseCost);
-                    costItems = new ArrayList<>();
                     for (int i = 1; i < preItems.size() - 1; i++) {
                         cost = new FactorioCostItem();
                         cost.setCosts(costs.get(i) / baseCost);
@@ -107,7 +126,6 @@ public class FactorioController {
                         costItems.add(cost);
                         nextItems.add(idToUrl(preItems.get(i).getId()));
                     }
-                    item.setCosts(costItems);
                 }
             }
         }
@@ -119,8 +137,8 @@ public class FactorioController {
                 preItems = element.select("a")
                         .stream().map(this::getItemByElement).toList();
                 if (!preItems.isEmpty()) {
-                    item.setUsed(preItems.stream().map(FactorioItems::getId).toList());
-                    nextItems.addAll(item.getUsed().stream().map(this::idToUrl).toList());
+                    item.setConsumed(preItems.stream().map(FactorioItems::getId).toList());
+                    nextItems.addAll(item.getConsumed().stream().map(this::idToUrl).toList());
                 }
             }
         }
@@ -151,5 +169,13 @@ public class FactorioController {
         item.setName(title);
         item.setId(urlToId(href));
         return item;
+    }
+
+    @RequestMapping("/getFactorioData")
+    @ResponseBody
+    public String getFactorioData() throws JsonProcessingException {
+        Flux<FactorioItems> items = factorioService.findAll();
+        return new ObjectMapper().writer().withDefaultPrettyPrinter()
+                .writeValueAsString(items.toStream().toList());
     }
 }
