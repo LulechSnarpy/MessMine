@@ -1,12 +1,14 @@
+'use client'
 import {Stage, Layer, Star, Text} from 'react-konva'
 import React from 'react'
-import Konva from "konva";
+import Konva from "konva"
+import isDragging = Konva.isDragging;
 
 function generateShapes() {
   return [...Array(10)].map((_, i) => ({
     id: i.toString(),
-    x: Math.random() * window.innerWidth,
-    y: Math.random() * window.innerHeight,
+    x: Math.random() * 1728,
+    y: Math.random() * 384,
     rotation: Math.random() * 180,
     isDragging: false,
   }));
@@ -16,9 +18,9 @@ const INITIAL_STATE = generateShapes();
 
 export default function Canvas() {
   const [stars, setStars] = React.useState(INITIAL_STATE);
-
-  const handleDragStart = (e: Konva.KonvaEventObject<DragEvent>) => {
-    const id = e.target.id();
+  /*const handleDragStart = (e: Konva.KonvaEventObject<DragEvent>) => {
+    const id = e.target.id()
+    console.info(id)
     setStars(
       stars.map((star) => {
         return {
@@ -27,24 +29,65 @@ export default function Canvas() {
         };
       })
     );
-  };
+  }
   const handleDragEnd = (e: Konva.KonvaEventObject<DragEvent>) => {
+    console.info(e.target)
     setStars(
       stars.map((star) => {
+        if (star.isDragging) console.log(star)
         return {
           ...star,
           isDragging: false,
-        };
+        }
       })
-    );
-  };
+    )
+  }*/
+
+  const MyStar = ({ star } : { star: any }) => {
+    const handleDragStart = (e: Konva.KonvaEventObject<DragEvent>) => {
+      const id = e.target.id()
+      stars.forEach((star) => {
+          star.isDragging = star.id === id
+      })
+    }
+    const handleDragEnd = (e: Konva.KonvaEventObject<DragEvent>) => {
+      stars.forEach((star) => {
+        star.x = e.target.x()
+        star.y = e.target.y()
+        star.isDragging = false
+      })
+    }
+    return  <Star
+      key={star.id}
+      id={star.id}
+      x={star.x}
+      y={star.y}
+      numPoints={5}
+      innerRadius={20}
+      outerRadius={40}
+      fill="#89b717"
+      opacity={0.8}
+      draggable
+      rotation={star.rotation}
+      shadowColor="black"
+      shadowBlur={10}
+      shadowOpacity={0.6}
+      shadowOffsetX={star.isDragging ? 10 : 5}
+      shadowOffsetY={star.isDragging ? 10 : 5}
+      scaleX={star.isDragging ? 1.2 : 1}
+      scaleY={star.isDragging ? 1.2 : 1}
+      onDragStart={handleDragStart}
+      onDragEnd={handleDragEnd}
+    />
+  }
 
   return (
-    <Stage width={window.innerWidth} height={window.innerHeight}>
+    <Stage height={384} width={1728}>
       <Layer>
-        <Text text="Try to drag a star" />
+        <Text text="Try to drag a star" x={150} y={50} />
         {stars.map((star) => (
-          <Star
+          <MyStar key={ 'MyStar_'+ star.id } star={ star }/>
+          /*<Star
             key={star.id}
             id={star.id}
             x={star.x}
@@ -65,7 +108,7 @@ export default function Canvas() {
             scaleY={star.isDragging ? 1.2 : 1}
             onDragStart={handleDragStart}
             onDragEnd={handleDragEnd}
-          />
+          />*/
         ))}
       </Layer>
     </Stage>

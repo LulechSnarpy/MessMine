@@ -29,7 +29,7 @@ import java.util.*;
 public class FactorioController {
     private final static String baseUrl= "https://wiki.factorio.com";
     private final static String prefix = "/";
-    private final static List<String> banList = Arrays.asList("Uranium-238,Uranium-235".split(","));
+    private final static List<String> banList = Arrays.asList("Uranium-238,Uranium-235,Solid_fuel".split(","));
     List<FactorioItems> items;
     Map<String, HttpClient> clients;
     Set<String> currentItems;
@@ -82,7 +82,8 @@ public class FactorioController {
         String description;
         // init item
         description = document.select("tr.border-top:contains(Prototype type)").select("a").text();
-        if ("recipe".contains(description)) {
+        if ("recipe".contains(description)
+                || "/Solid_fuel_from_light_oil,/Solid_fuel_from_heavy_oil,/Solid_fuel_from_petroleum_gas".contains(url)) {
             clients.remove(url);
             return url;
         }

@@ -1,8 +1,6 @@
-import {FactorioLinks} from "@/app/ui/factorio-links";
-import {LinkData} from '@/app/ui/datatype-links';
-import {Router} from "next/router";
+import {FactorioLinks, LinkData} from "@/app/ui/factorio-links";
 
-const linkdatas = [{
+const linkdatas: LinkData[]= [{
   url: '/factorio',
   title: 'Tool Home'
 },{
@@ -11,13 +9,13 @@ const linkdatas = [{
 }];
 
 export default function FactorioLayout({
-  children,
+  children
 }: {
   children: React.ReactNode
 }) {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="mb-3 text-4xl font-semibold">Factorio Tools</h1>
+    <section className="flex min-h-screen flex-col justify-center p-24">
+      <h1 className="mb-3 text-4xl font-semibold text-center">Factorio Tools</h1>
       <FactorioLinks linkdatas={linkdatas}/>
       {children}
     </section>
