@@ -14,7 +14,7 @@ export default function FactorioLayout({
   children: React.ReactNode
 }) {
   return (
-    <section className="flex min-h-screen flex-col justify-center p-24">
+    <section className="flex min-h-screen flex-col justify-center p-20">
       <h1 className="mb-3 text-4xl font-semibold text-center">Factorio Tools</h1>
       <FactorioLinks linkdatas={linkdatas}/>
       {children}

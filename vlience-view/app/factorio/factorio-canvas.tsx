@@ -4,10 +4,11 @@ import React from "react"
 import useImage from 'use-image'
 import {FactorioImageData} from "./factorio-manager"
 import Konva from "konva"
+import isDragging = Konva.isDragging;
 
 export function FactorioCanvas({ images } : { images: FactorioImageData[] }) {
   const stageWidth = 1728
-  const stageHeight = 384
+  const stageHeight = 604
   let INITIAL_STATE: FactorioImageData[]
 
   INITIAL_STATE = images
@@ -15,24 +16,18 @@ export function FactorioCanvas({ images } : { images: FactorioImageData[] }) {
 
   const handleDragStart = (e: Konva.KonvaEventObject<DragEvent>) => {
     const id = e.target.id();
-    setFactorioImages(
-      factorImages.map((image) => {
-        return {
-          ...image,
-          isDragging: image.id === id,
-        }
-      })
-    )
+    factorImages.forEach(image => {
+      image.isDragging = image.id === id
+    })
   }
-  const handleDragEnd = () => {
-    setFactorioImages(
-      factorImages.map((image) => {
-        return {
-          ...image,
-          isDragging: false,
-        }
-      })
-    )
+  const handleDragEnd = (e : Konva.KonvaEventObject<DragEvent>) => {
+   factorImages.forEach(image => {
+     if (image.isDragging) {
+       image.x = e.target.x()
+       image.y = e.target.y()
+       image.isDragging = false
+     }
+   })
   }
 
   // the first very simple and recommended way:
@@ -55,7 +50,7 @@ export function FactorioCanvas({ images } : { images: FactorioImageData[] }) {
   }
 
   return (
-      <Stage width={stageWidth} height={stageHeight}>
+      <Stage width={stageWidth} height={stageHeight}  className="border-cyan-500 border-4">
         <Layer>
           {
             factorImages.map((data) => (

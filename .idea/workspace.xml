@@ -4,28 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="made it possible to store data which get form &#10;wiki.factorio.com in elasticsearch">
-      <change afterPath="$PROJECT_DIR$/vlience-view/app/factorio/factorio-canvas.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vlience-view/app/factorio/factorio-manager.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vlience-view/app/factorio/factorio.tsx" afterDir="false" />
+    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="change demo canvas.tsx in vlience-view&#10;try to drag component under custom&#10;and found the useState set function's scope problem cause">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-view/app/components/canvas.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/components/canvas.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-view/app/factorio/factorio-canvas.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/factorio/factorio-canvas.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-view/app/factorio/factorio-manager.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/factorio/factorio-manager.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vlience-view/app/factorio/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/factorio/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vlience-view/app/factorio/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/factorio/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-view/app/ui/factorio-links.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/ui/factorio-links.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-view/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-view/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vlience-web/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/controller/FactorioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-web/src/main/java/org/iskyc/lulech/main/controller/FactorioController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +201,9 @@
       <workItem from="1725070432301" duration="15398000" />
       <workItem from="1725098529580" duration="20239000" />
       <workItem from="1725167774442" duration="34960000" />
-      <workItem from="1725237940050" duration="12781000" />
+      <workItem from="1725237940050" duration="27189000" />
+      <workItem from="1725287288693" duration="8846000" />
+      <workItem from="1725339524304" duration="4350000" />
     </task>
     <task id="LOCAL-00001" summary="A huge change">
       <option name="closed" value="true" />
@@ -270,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725075758937</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="change demo canvas.tsx in vlience-view&#10;try to drag component under custom&#10;and found the useState set function's scope problem cause">
+      <option name="closed" value="true" />
+      <created>1725271158176</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725271158176</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +315,8 @@
     <MESSAGE value="add function to get data from wiki.factorio.com &#10;but to slow in Synchronous mode&#10;next step try to tn Asynchronous mode" />
     <MESSAGE value="change function to get data from wiki.factorio.com &#10;fix slow in Synchronous mode&#10;now in Asynchronous mode&#10;but still some problem in data for check it later" />
     <MESSAGE value="made it possible to store data which get form &#10;wiki.factorio.com in elasticsearch" />
-    <option name="LAST_COMMIT_MESSAGE" value="made it possible to store data which get form &#10;wiki.factorio.com in elasticsearch" />
+    <MESSAGE value="change demo canvas.tsx in vlience-view&#10;try to drag component under custom&#10;and found the useState set function's scope problem cause" />
+    <option name="LAST_COMMIT_MESSAGE" value="change demo canvas.tsx in vlience-view&#10;try to drag component under custom&#10;and found the useState set function's scope problem cause" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
