@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic"
-import {FactorioImageData, getFactorioImages} from './factorio-manager'
+import {getFactorioData, FactorioImageData} from './factorio-manager'
 
 const Canvas = dynamic(() => import("@/app/factorio/factorio")
   .then(mod => mod.FactorioCanvas),{
@@ -9,15 +9,15 @@ const Canvas = dynamic(() => import("@/app/factorio/factorio")
   ssr: false,
 })*/
 
-
 export default async function Page() {
-  let images : FactorioImageData[] = await getFactorioImages()
+  let factorioData = await getFactorioData()
+  let images : FactorioImageData[] = factorioData.images
+  let lines = factorioData.lines
     return (
       <main className="flex min-h-96 flex-col items-center justify-between pt-5">
         <h1 className="flex-none text-2xl font-semibold pt-5 pb-5">Main Page</h1>
         <div className="flex-auto items-center justify-center min-h-96">
-          <Canvas images={images}/>
-         {/* <Canvas/>*/}
+          <Canvas images={ images } lines={ lines } />
         </div>
       </main>
     );

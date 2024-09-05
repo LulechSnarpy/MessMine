@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="change demo canvas.tsx in vlience-view&#10;try to drag component under custom&#10;and found the useState set function's scope problem cause">
+    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="store history before change analyse plot">
+      <change afterPath="$PROJECT_DIR$/vlience-view/app/factorio/analysed_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlience-view/app/factorio/source_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vlience-view/app/factorio/factorio-canvas.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/factorio/factorio-canvas.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vlience-view/app/factorio/factorio-manager.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/factorio/factorio-manager.tsx" afterDir="false" />
@@ -203,7 +207,9 @@
       <workItem from="1725167774442" duration="34960000" />
       <workItem from="1725237940050" duration="27189000" />
       <workItem from="1725287288693" duration="8846000" />
-      <workItem from="1725339524304" duration="4350000" />
+      <workItem from="1725339524304" duration="14523000" />
+      <workItem from="1725413726103" duration="41275000" />
+      <workItem from="1725493980310" duration="22043000" />
     </task>
     <task id="LOCAL-00001" summary="A huge change">
       <option name="closed" value="true" />
@@ -269,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725271158176</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="store history before change analyse plot">
+      <option name="closed" value="true" />
+      <created>1725359068759</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1725359068759</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +330,8 @@
     <MESSAGE value="change function to get data from wiki.factorio.com &#10;fix slow in Synchronous mode&#10;now in Asynchronous mode&#10;but still some problem in data for check it later" />
     <MESSAGE value="made it possible to store data which get form &#10;wiki.factorio.com in elasticsearch" />
     <MESSAGE value="change demo canvas.tsx in vlience-view&#10;try to drag component under custom&#10;and found the useState set function's scope problem cause" />
-    <option name="LAST_COMMIT_MESSAGE" value="change demo canvas.tsx in vlience-view&#10;try to drag component under custom&#10;and found the useState set function's scope problem cause" />
+    <MESSAGE value="store history before change analyse plot" />
+    <option name="LAST_COMMIT_MESSAGE" value="store history before change analyse plot" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

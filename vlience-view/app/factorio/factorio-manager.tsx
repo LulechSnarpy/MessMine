@@ -1,5 +1,5 @@
 import Konva from "konva"
-import {number} from "prop-types";
+import fs from 'fs'
 
 export interface FactorioItemCost {
   costItemId: string
@@ -17,15 +17,28 @@ export interface FactorioItem {
 
 export interface FactorioImageData extends Konva.ImageConfig {
   url: string
+  x: number
+  y: number
+}
+
+export interface FactorioNode extends FactorioItem {
+  deep: number
+}
+
+export interface Point {
+  x: number,
+  y: number
 }
 
 const images: FactorioImageData[] = new Array<FactorioImageData>()
+const lines: Konva.LineConfig[] = new Array<Konva.LineConfig>()
+const imageMap : Map<string, FactorioImageData> = new Map<string, FactorioImageData>()
 class IsLoading {
   isLoading : boolean
   constructor() {
      this.isLoading = false
   }
-  isLoaded () {return this.isLoading }
+  isLoaded () { return this.isLoading }
   onLoaded() {
    this.isLoading = true
   }
@@ -34,123 +47,238 @@ const isLoading = new IsLoading()
 
 const width = 1728
 const height = 604
+const itemMap = new Map<string, FactorioItem>()
+const itemUsed = new Map<string, boolean>()
 
 function analyseFactorioItems (items : FactorioItem[]) {
-  const itemMap = new Map<string, FactorioItem>()
-  const itemUsed = new Map<string, boolean>()
-  const itemQueue = new Array<FactorioItem>()
+  const itemQueue = new Array<FactorioNode>()
   const itemBase = new Array<FactorioItem>()
-  const itemBaseConsumed = new Map<string, Map<string, string>>()
   const uniqueItems = new Array<FactorioItem>()
-  items.forEach(item => {
-    if (!itemMap.get(item.id)) uniqueItems.push(item)
-    else console.log(item)
-    itemMap.set(item.id, item)
-    itemUsed.set(item.id, false)
+  const deepMap = new Map<string, number>()
+  items.forEach(item => { // init flag and map and distinct
+    if (!itemMap.get(item.id)) uniqueItems.push(item) // distinct
+    itemMap.set(item.id, item) // map
+    itemUsed.set(item.id, false) // flag
   })
-  uniqueItems.forEach(item => {
-    if (item.costs && item.costs.length == 0) {
-      itemQueue.push(item) // add queue base
-      itemBase.push(item)  // remind base items
-      itemBaseConsumed.set(item.id, new Map<string, string>()) // init consumed map
-    }
+  let points: Array<Point> =
+    [{ x: 0, y: 0 }, { x: width, y: 0 }, { x: 0, y: height }, { x: width, y: height }]
+  let idx = 0
+  uniqueItems.forEach(item => { // init queue base item
+   if (item.costs && item.costs.length == 0) {
+     if ('Stone, Coal, Iron_ore, Copper_ore'.includes(item.id)) {
+       itemBase.push(item)  // remind base items
+       deepMap.set(item.id, getDeep(item)) // remind consume deep for an item
+       itemQueue.push({ // add queue base
+         ...item,
+         deep: 1
+       })
+       let point = getPoint(points[idx++])
+       let image = {
+         ...point,
+         id: item.id,
+         url: item.description,
+         alt: item.name,
+         image: undefined,
+       }
+       images.push(image)
+       imageMap.set(item.id, image)
+     }/* else {
+       let image = {
+         x: width / 2,
+         y: height / 2,
+         id: item.id,
+         url: item.description,
+         alt: item.name,
+         image: undefined,
+       }
+       images.push(image)
+       imageMap.set(item.id, image)
+     }*/
+   }
   })
+  let xPoint = width / 2  // center x
+  let yPoint = height / 2 // center y
+  let r = Math.sqrt(xPoint * xPoint + yPoint * yPoint)
   while(itemQueue.length > 0) {
     let item = itemQueue.shift()
     if (!item) continue
-    let costMap = new Map<string, FactorioItemCost>()
-    let costs = new Array<FactorioItemCost>()
-    let costTimes = 0
-    item.costs.forEach(p => {
-      let childCost = itemMap.get(p.costItemId)
-      if (childCost && childCost.costs) {
-        childCost.costs.forEach((c) => {
-          let id = c.costItemId
-          let cost = costMap.get(id)
-          if (!cost) {
-            cost = {
-              costItemId: id,
-              cost: 0
-            }
-            costMap.set(id, cost)
-            costs.push(cost)
-            itemBaseConsumed.get(id)?.set(item.id, item.id)
-          }
-          cost.cost += p.cost * c.cost
-        })
-        costTimes += p.cost * childCost.costTimes
-      }
+    let image = imageMap.get(item.id)
+    if (!image) continue
+    item.costs.forEach(p => { // init link lines for one item
+      let preImage = imageMap.get(p.costItemId)
+      if (!preImage) return
+      let x1 = preImage.x + 20
+      let y1 = preImage.y + 20
+      let x3 = image.x + 20
+      let y3 = image.y + 20
+      let x2 = ( x1 + x3 ) / 2
+      let y2 = ( y1 + y3 ) / 2
+      lines.push({
+        id: p.costItemId + '-*-' + item.id ,
+        points: [x1, y1, x2, y2, x3, y3],
+        stroke: 'blue'
+      })
     })
-    item.costTimes += costTimes
-    item.costs = costs
+    let x = image.x
+    let y = image.y
+    let count = 1
+    let deep = deepMap.get(item.id)
+    if (!deep) return
     item.consumed.forEach(d => {
       let next = itemMap.get(d)
-      if (next && itemUsed.get(d)) itemQueue.push(next)
-      itemUsed.set(d, true)
+      if (!next || itemUsed.get(d)) return
+      let nextDeep = getDeepBefore(next)
+      if (nextDeep !== item.deep + 1) return
+      count = count + 1
+    })
+    let basePi =
+      Math.floor(
+        Math.atan2((y - yPoint), (x - xPoint))
+        * 2 / Math.PI)
+      * Math.PI / 2
+    let growPi = Math.asin(xPoint / (r * (deep - item.deep) / deep))
+    if (xPoint > (r * (deep - item.deep) / deep)) growPi = Math.PI / 2
+    growPi = growPi / count
+    let pi = basePi
+    item.consumed.forEach(d => { // add next item in queue
+      let next = itemMap.get(d)
+      if (next && !itemUsed.get(d)) {
+        let nextDeep = getDeepBefore(next)
+        if (nextDeep !== item.deep + 1) return
+        itemQueue.push({
+          ...next,
+          deep: item.deep + 1
+        })
+        deepMap.set(next.id, deep)
+        pi = pi + growPi
+        pi = Math.atan2((y - yPoint), (x - xPoint))
+        let point= getPointByPI(pi, r * (deep - item.deep) / deep)
+        let image = {
+          ...point,
+          id: next.id,
+          url: next.description,
+          alt: next.name,
+          image: undefined
+        }
+        images.push(image)
+        imageMap.set(next.id, image)
+        itemUsed.set(d, true)
+      }
     })
   }
-  let total = 0;
-  itemBase.forEach((item) => {
-    item.consumed = new Array<string>()
-    itemBaseConsumed.get(item.id)?.forEach((_, key) => {
-      item.consumed.push(key)
-    })
-    total += item.consumed.length
-  })
-  let xPoint = width / 2
-  let yPoint = height / 2
-  let r = Math.sqrt(xPoint * xPoint + yPoint * yPoint)
-  let linePI = new Map<string, number>()
-  let preLinePI = 0
-  itemBase.sort((a, b) => (a.consumed.length - b.consumed.length))
-  itemBase.forEach((item, i) => {
-    if (item.consumed.length) {
-      let pi = Math.PI * item.consumed.length / total
-      linePI.set( item.id, pi * 2 + preLinePI )
-      pi += preLinePI
-      preLinePI = Number(linePI.get(item.id))
-      let point = getPointByPI( pi )
-      images.push({
-        id: item.id,
-        url: item.description,
-        alt: item.name,
-        image: undefined,
-        x: point.x,
-        y: point.y
-      })
-    }
-  })
-  function getPointByPI (pi: number) {
-    let x = 0
-    let y = 0
-    x = Math.cos(pi) * r + xPoint
-    y = Math.sin(pi) * r + yPoint
-    if (x + 40 > width) x = width - 40
-    if (x < 0) x = 0
-    if (y + 40 > height) y = height - 40
-    if (y < 0) y = 0
-    return {
+  function getPointByPI (pi: number, r: number) {
+    let x = Math.cos(pi) * r + xPoint
+    let y = Math.sin(pi) * r + yPoint
+    return  getPoint({
       x: x,
       y: y
-    }
+    })
   }
 }
 
+function getDeep(item : FactorioItem) : number {
+  let deep = 0;
+  let queue = new Array<FactorioNode>()
+  queue.push({
+    ...item,
+    deep: 1
+  })
+  while(queue.length > 0) {
+    let node = queue.shift()
+    if (!node) continue
+    deep = Math.max(deep, node.deep)
+    node.consumed.forEach(d => {
+      let next = itemMap.get(d)
+      if (!next) return
+      queue.push({
+        ...next,
+        deep: node.deep + 1
+      })
+    })
+  }
+  return deep
+}
+
+function getDeepBefore(item : FactorioItem) : number {
+  let deep = 0;
+  let queue = new Array<FactorioNode>()
+  queue.push({
+    ...item,
+    deep: 1
+  })
+  while (queue.length > 0) {
+    let node = queue.shift()
+    if (!node) continue
+    deep = Math.max(deep, node.deep)
+    node.costs.forEach(d => {
+      let next = itemMap.get(d.costItemId)
+      if (!next) return
+      queue.push({
+        ...next,
+        deep: node?.deep + 1
+      })
+    })
+  }
+  return deep
+}
+
+function getPoint(point: Point) : Point {
+  point.x = inRange(point.x, width - 40)
+  point.y = inRange(point.y, height - 40)
+  return point;
+}
+
+function inRange(a: number, ceil: number, floor: number = 0) : number {
+  if (a < floor) a = floor
+  if (a > ceil) a = ceil
+  return a
+}
+
+const filePath: string = process.cwd() + '/app/factorio/analysed_data.json'
+const sourceFilePath: string = process.cwd() + '/app/factorio/source_data.json'
 
 async function getBaseData() {
   if (isLoading.isLoaded()) return
-   await fetch('http://localhost:8989/getFactorioData')
-    .then(res => res.json())
-    .then(data => {
-      analyseFactorioItems(data)
-    }).catch(
-      rejected => {
-        console.log(rejected)
-      }
-    )
+  let stringData = fs.readFileSync(filePath, 'utf8')
+  if (stringData && stringData.length > 0) {
+    let data: { images: FactorioImageData[], lines: Konva.LineConfig[] } =
+      JSON.parse(stringData)
+    if (data && data.images.length && data.lines.length) {
+      images.concat(data.images)
+      lines.concat(data.lines)
+      return
+    }
+  }
+  stringData = fs.readFileSync(sourceFilePath, 'utf-8')
+  if (stringData && stringData.length > 0) {
+    let sourceData: FactorioItem[] =
+      JSON.parse(stringData)
+    if (sourceData) {
+      analyseFactorioItems(sourceData)
+      return
+    }
+  }
+  await fetch('http://localhost:8989/getFactorioData')
+  .then(res => res.json())
+  .then(data => {
+    fs.writeFile(sourceFilePath, JSON.stringify(data), () => {})
+    analyseFactorioItems(data)
+  }).catch(
+    rejected => {
+      console.log(rejected)
+    }
+  ).finally(() =>{
+  })
 }
 
-export async function getFactorioImages () {
+export default async function handler(req : Request, res : Response) {
+  if (req.method === 'POST') {
+    fs.writeFileSync(filePath, JSON.stringify(req.body))
+    return res
+  }
+}
+
+export async function getFactorioData () {
   await getBaseData().finally(() => { isLoading.onLoaded() })
-  return images
+  return { images, lines }
 }
