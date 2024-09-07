@@ -1,26 +1,37 @@
 import {Line} from "react-konva"
 import React from 'react'
-import {number} from "prop-types";
+import Konva from "konva";
+import LineConfig = Konva.LineConfig;
 
-export default function BloodPool({ innerR, outerR } : { innerR: number, outerR: number }) {
-  const [points, setPoints] = React.useState<number[]>(shapeFunction(innerR, outerR))
+export function BloodPool(
+  { innerR, degree, isCircle, config }
+    : { innerR: number, degree: number, isCircle: boolean, config: LineConfig}) {
+  // const [points, setPoints] = React.useState<number[]>(shapeFunction(innerR, degree, isCircle))
+  let points = shapeFunction(innerR, degree, isCircle)
   return (
-    <Line points={points} stroke={'gray'} fill={'white'} strokeWidth={10}
-          x={window.innerWidth/2-5} y={window.innerHeight/2-5}
-          closed={true}
+    <Line
+          points={points}
+          stroke={config.stroke}
+          strokeWidth={config.strokeWidth}
+          x={config.x}
+          y={config.y}
+          closed={config.closed}
+          tension={config.tension}
+          fill={config.fill}
     />
   )
 }
 
-const degree = 720
+const minDegree = 360
+const distance = 200
 
-function shapeFunction(innerR: number, outerR: number) : Array<number> {
+function shapeFunction(innerR: number, degree: number, isCircle: boolean = true) : Array<number> {
   let points = new Array<number>()
-  points = points.concat(baseRLine(innerR, 0))
-  points = points.concat(spiral(innerR, outerR, 0))
-  points = points.concat(circle(outerR))
-  points = points.concat(reversePoints(spiral(innerR, outerR, 0)))
-  points = points.concat(reversePoints(baseRLine(innerR, 0)))
+  //points = points.concat(baseRLine(innerR, 0))
+  points = points.concat(spiral(innerR, degree, 0))
+  if(isCircle) points = points.concat(circle(degree))
+  // if(isCircle) points = points.concat(reversePoints(spiral(innerR, degree, 0)))
+  // points = points.concat(reversePoints(baseRLine(innerR, 0)))
   return points
 }
 
@@ -54,16 +65,13 @@ function baseRLine(innerR: number, baseTheta: number): Array<number> {
   return points
 }
 
-function spiral(innerR: number, outerR: number, baseTheta: number): Array<number> {
+function spiral(innerR: number, degree: number, baseTheta: number): Array<number> {
   let points = new Array<number>()
   let r = innerR
-  let increased = (outerR - innerR) / degree
+  let increased = distance / minDegree
   for (let i = 0; i <= degree; i++) {
     let theta = baseTheta + Math.PI * i / 180
-   // r = r + decreasedR(innerR, outerR, i)
     r = r + increased
-  /*  console.info(r)
-    console.info('increasedR = ' + decreasedR(innerR, outerR, i))*/
     let x = Math.cos(theta) * r
     let y = Math.sin(theta) * r
     points.push(x)
@@ -72,17 +80,14 @@ function spiral(innerR: number, outerR: number, baseTheta: number): Array<number
   return points
 }
 
-function decreasedR(innerR: number, outerR: number, index: number) : number  {
-  let h = (outerR-innerR) * 2 / degree
-  return h * (degree - index) / degree
-}
-
-function circle(outerR: number) : Array<number> {
+function circle(degree: number) : Array<number> {
+  let r = degree / minDegree * distance
+  let baseDegree = degree % 360
   let points = new Array<number>()
-  for (let i = 0; i <= 360; i++) {
+  for (let i = baseDegree; i <= 360 + baseDegree; i++) {
     let theta = Math.PI * i / 180
-    let x = Math.cos(theta) * outerR
-    let y = Math.sin(theta) * outerR
+    let x = Math.cos(theta) * r
+    let y = Math.sin(theta) * r
     points.push(x)
     points.push(y)
   }

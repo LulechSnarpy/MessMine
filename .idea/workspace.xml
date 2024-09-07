@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="can drag image and change the links between to images">
-      <change afterPath="$PROJECT_DIR$/vlience-view/app/vlience/blood-pool.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vlience-view/app/vlience/main-stage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vlience-view/app/vlience/page.tsx" afterDir="false" />
+    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="try to start a stage for blood pool&#10;save before change args from (depend on r) to (depend on theta)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-view/app/vlience/blood-pool.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/vlience/blood-pool.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-view/app/vlience/main-stage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/vlience/main-stage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vlience-view/app/vlience/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/vlience/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +200,7 @@
       <workItem from="1725339524304" duration="14523000" />
       <workItem from="1725413726103" duration="41275000" />
       <workItem from="1725493980310" duration="25750000" />
-      <workItem from="1725680669110" duration="16878000" />
+      <workItem from="1725680669110" duration="31353000" />
     </task>
     <task id="LOCAL-00001" summary="A huge change">
       <option name="closed" value="true" />
@@ -282,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725531719274</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="try to start a stage for blood pool&#10;save before change args from (depend on r) to (depend on theta)">
+      <option name="closed" value="true" />
+      <created>1725711740186</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1725711740186</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +339,8 @@
     <MESSAGE value="change demo canvas.tsx in vlience-view&#10;try to drag component under custom&#10;and found the useState set function's scope problem cause" />
     <MESSAGE value="store history before change analyse plot" />
     <MESSAGE value="can drag image and change the links between to images" />
-    <option name="LAST_COMMIT_MESSAGE" value="can drag image and change the links between to images" />
+    <MESSAGE value="try to start a stage for blood pool&#10;save before change args from (depend on r) to (depend on theta)" />
+    <option name="LAST_COMMIT_MESSAGE" value="try to start a stage for blood pool&#10;save before change args from (depend on r) to (depend on theta)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
