@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="try to start a stage for blood pool&#10;save before change args from (depend on r) to (depend on theta)">
+    <list default="true" id="e0541f6a-7454-4470-9935-c8757770b452" name="Changes" comment="changed to depend on theta arg&#10;got a litter visible demo for what really want">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vlience-view/app/vlience/blood-pool.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/vlience/blood-pool.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vlience-view/app/vlience/main-stage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/vlience-view/app/vlience/main-stage.tsx" afterDir="false" />
@@ -200,7 +200,8 @@
       <workItem from="1725339524304" duration="14523000" />
       <workItem from="1725413726103" duration="41275000" />
       <workItem from="1725493980310" duration="25750000" />
-      <workItem from="1725680669110" duration="31353000" />
+      <workItem from="1725680669110" duration="31677000" />
+      <workItem from="1727651345724" duration="26853000" />
     </task>
     <task id="LOCAL-00001" summary="A huge change">
       <option name="closed" value="true" />
@@ -290,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725711740186</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="changed to depend on theta arg&#10;got a litter visible demo for what really want">
+      <option name="closed" value="true" />
+      <created>1725734434224</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1725734434224</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +349,8 @@
     <MESSAGE value="store history before change analyse plot" />
     <MESSAGE value="can drag image and change the links between to images" />
     <MESSAGE value="try to start a stage for blood pool&#10;save before change args from (depend on r) to (depend on theta)" />
-    <option name="LAST_COMMIT_MESSAGE" value="try to start a stage for blood pool&#10;save before change args from (depend on r) to (depend on theta)" />
+    <MESSAGE value="changed to depend on theta arg&#10;got a litter visible demo for what really want" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed to depend on theta arg&#10;got a litter visible demo for what really want" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
